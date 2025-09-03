@@ -15,6 +15,22 @@ if (isset($_POST['prenom']) && isset($_POST['nom'])) {
 } else {
     echo "<p>Informations manquantes.</p>";
 }
+
+if (isset($_POST['login']) && isset($_POST['password'])) {
+    $login = $_POST['login'];
+    $password = $_POST['password'];
+
+    if ($login === 'admin' && $password === 'azerty') {
+        header('Location: profil.html');
+        exit();
+    } else {
+        header('Location: index.html');
+        exit();
+    }
+} else {
+    header('Location: index.html');
+    exit();
+}
 ?>
 </body>
 </html>
