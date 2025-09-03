@@ -21,10 +21,10 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
     $password = $_POST['password'];
 
     if ($login === 'admin' && $password === 'azerty') {
-        header('Location: profil.html');
+        header('Location: index.html');
         exit();
     } else {
-        header('Location: index.html');
+        header('Location: profil.html');
         exit();
     }
 } else {
