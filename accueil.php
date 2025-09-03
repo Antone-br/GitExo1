@@ -16,6 +16,5 @@ if (isset($_POST['prenom']) && isset($_POST['nom'])) {
     echo "<p>Informations manquantes.</p>";
 }
 ?>
-
 </body>
 </html>
